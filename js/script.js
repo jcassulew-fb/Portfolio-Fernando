@@ -15,7 +15,15 @@ function updateActiveLink() {
     navLinks.forEach(link => {
         link.classList.toggle('active', Boolean(activeSection && link.hash === `#${activeSection.id}`));
     });
-}
+
+    //*============== SCROLL active link ========*/
+ let header = document.querySelector('header');
+
+ header.classList.toggle('sticky', window.scrollY >= 100);
+};
 
 window.addEventListener('scroll', updateActiveLink);
 updateActiveLink();
+
+
+
