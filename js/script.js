@@ -42,4 +42,27 @@ window.addEventListener('scroll', updateActiveLink);
 updateActiveLink();
 
 
+ //*==============revelação ao rolar a página========*/
+   ScrollReveal({ 
+    //reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+   });
+
+   ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+   ScrollReveal().reveal('.home-img, .services-content, .portfolio-box, .contact form', { origin: 'bottom' });
+   ScrollReveal().reveal('.home-content h1, .about-image', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left' });
+
+     //*==============efeito de digitação========*/
+
+     const typed = new Typed('.multiple-text', {
+        strings: ['Desenvolvedor Frontend', 'Web Designer', 'Analista de Segurança Cibernética','Empreendedor Digital'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+     });
+
 

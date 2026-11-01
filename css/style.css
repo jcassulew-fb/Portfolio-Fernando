@@ -87,7 +87,20 @@ section {
 
 .home-img img {
     width: 40vw;
+    animation: floatImage 4s ease-in-out infinite;
     
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+       50%{
+        transform: translateY(-2rem);
+    }
+       100%{
+        transform: translateY(0);
+    }
 }
 
 .home-content h3 {
@@ -487,6 +500,19 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .footer .footer-text {
+        text-align: center;
+    }
+
+    .footer .footer-text p {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 365px) {
@@ -496,14 +522,5 @@ span {
 
     .about-img img {
         width: 90vw;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
     }
 }
