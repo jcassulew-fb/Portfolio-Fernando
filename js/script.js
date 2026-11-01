@@ -58,7 +58,7 @@ updateActiveLink();
      //*==============efeito de digitação========*/
 
      const typed = new Typed('.multiple-text', {
-        strings: ['Desenvolvedor Frontend', 'Web Designer', 'Analista de Segurança Cibernética','Empreendedor Digital'],
+        strings: ['Desenvolvedor Frontend', 'Analista de Segurança Cibernética','Empreendedor Digital'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
